@@ -11,7 +11,7 @@ export default function ActionAreaCard() {
     const navigate = useNavigate();
     const gotoBlogDetail=(item)=>{
       console.log(item);
-      navigate('/detailPage',{state:item});
+      navigate('/blogDetails',{state:item});
   }
   return (
      <div className="App" style={{ display:'flex', alignItems:'center',width:'100%',justifyContent:'center'}}>

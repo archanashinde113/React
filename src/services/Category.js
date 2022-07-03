@@ -11,17 +11,6 @@ export const CategoryApi = createApi({
     }),
   }),
 })
-
-export const BlogCategoryApi = createApi({
-  reducerPath: 'BlogApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://logibricks.com/api/' }),
-  endpoints: (builder) => ({
-    getBlogCategories2: builder.query({
-      query: (path) => `${path}`,
-    }),
-  }),
-})
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
 export const { useGetBlogCategoriesQuery } = CategoryApi
-export const { useGetBlogDetailQuery } = CategoryApi
