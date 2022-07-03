@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useGetBlogCategoriesQuery} from '../services/Blog'
+import {useGetBlogCategoriesQuery} from '../services/Category'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';

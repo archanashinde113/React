@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {useGetBlogCategoriesQuery} from '../services/Blog'
+import {useGetBlogDetailQuery} from '../services/Category'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -7,10 +7,8 @@ import Typography from '@mui/material/Typography';
 
 
 export default function BlogDetails(props) {
-    // const [data,setData] = React.useState();
-    // const [error,setError] = React.useState();
-    // const [isLoading,setIsLoading] = React.useState();
-    const { data, error, isLoading } = useGetBlogCategoriesQuery('blogs/marketplace-management?page=1')
+    
+    const { data, error, isLoading } = useGetBlogDetailQuery('blogs/marketplace-management?page=1')
     React.useEffect(()=>{
         
     },

@@ -2,7 +2,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 // Define a service using a base URL and expected endpoints
-export const BlogApi = createApi({
+export const CategoryApi = createApi({
   reducerPath: 'BlogApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://logibricks.com/api/' }),
   endpoints: (builder) => ({
@@ -23,4 +23,5 @@ export const BlogCategoryApi = createApi({
 })
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetBlogCategoriesQuery } = BlogApi
+export const { useGetBlogCategoriesQuery } = CategoryApi
+export const { useGetBlogDetailQuery } = CategoryApi
