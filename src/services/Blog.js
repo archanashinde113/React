@@ -16,7 +16,7 @@ export const BlogCategoryApi = createApi({
   reducerPath: 'BlogApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://logibricks.com/api/' }),
   endpoints: (builder) => ({
-    getBlogCategories: builder.query({
+    getBlogCategories2: builder.query({
       query: (path) => `${path}`,
     }),
   }),

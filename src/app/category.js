@@ -19,7 +19,7 @@ export default function ActionAreaCard() {
          {error ? (
         <>{error?.message}</>
       ) : isLoading ? (
-        <>Error...</>
+        <>Loading....</>
       ) : data.data.length > 0 ?  data.data.map((category)=>  (
         <>
         <Card onClick={()=>{gotoBlogDetail(category)}} sx={{ maxWidth: 345, marginTop:5, margin: 1 }}>

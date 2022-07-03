@@ -21,7 +21,7 @@ return(
   {error ? (
  <>{error?.message}</>
 ) : isLoading ? (
-    <>Error...</>
+    <>Loading....</>
 ) : data.blog.data.length > 0 ?  data.blog.data.map((category)=>  (
  <>
  <Card sx={{ maxWidth: 345, marginTop:5, margin: 1 }}>
