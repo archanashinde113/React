@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 
 
 export default function BlogDetails(props) {
-    // console.log(props.state)
-    const { data, error, isLoading } = useGetBlogCategoriesQuery('blogs/marketplace-management?page=1')
+  const CategoryName = localStorage.getItem('category');
+    const { data, error, isLoading } = useGetBlogCategoriesQuery('blogs/'+CategoryName+'?page=1')
     console.log(data);
     React.useEffect(()=>{
         
