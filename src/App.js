@@ -5,17 +5,13 @@ import BlogDetails  from './app/BlogDetails';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 export default function App() {
-  return (
-     
+  return ( 
       <Router>
-      
       <Navbar /> 
       <Routes>
         <Route path='/' element={<Category/>} />
         <Route path='/blogDetails' element={< BlogDetails/>} />
-      
       </Routes>
-      
     </Router>
   )
 }
